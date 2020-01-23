@@ -24,6 +24,18 @@ Providing SQL instance on Azure
 ansible-playbook azure-sql/sql_create.yml
 ```
 
+Providing HDP instance
+
+- Modify inventory in `static-hdp/inventory/static`
+- Adjust variables in `static-hdp/playbooks/group_vars`
+- Run the playbook
+
+```bash
+cd static-hdp
+ansible-playbook playbooks/install_cluster.yml -i inventory/static -u <admin_user> -k -K
+```
+
+
 ## Resources
 - [ansible-hortonworks](https://github.com/hortonworks/ansible-hortonworks)
 - [ansible-playbooks](https://github.com/Azure-Samples/ansible-playbooks)
