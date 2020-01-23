@@ -14,7 +14,7 @@
 
 - hosts: localhost
   vars:
-    resource_group: egi_demo
+    resource_group: egi_demo_sql
     location: switzerlandnorth
     sqlserver_name: demo-db-{{ rpfx }}
     sqldb_name: sqldbtest
