@@ -6,6 +6,13 @@
 ##
 ######################################################
 
+[hadoop-cluster:children]
+hdp-master
+hdp-slave
+
+[ambari-server:children]
+hdp-master
+
 [hdp-master]
 hdp-1 ansible_host=13.69.97.79 rack=/default-rack
 
